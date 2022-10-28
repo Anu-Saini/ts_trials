@@ -10,15 +10,10 @@ const contentStyle = {
 };
 
 function MyCarousel(props) {
-let data= [];
-data = props.data;
+
 return (    
-   
-    
-    
-  <Carousel autoplay>
-    
-     <div>
+    <Carousel autoplay>
+       <div>
         <CarouselImages props ={props.data[0]} ></CarouselImages>
     </div>
     <div>

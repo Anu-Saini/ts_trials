@@ -11,6 +11,7 @@ import Locations from "./pages/Locations";
 import Navbar from './components/Navbar';
 import HomePage from "./pages/Home";
 import AllAnimals from "./pages/AllAnimals/Animal";
+import User from "./pages/User/User";
 
 const client = new ApolloClient({
   uri: 'http://localhost:3001/graphql',
@@ -27,8 +28,8 @@ function App() {
         <Route path="/register" element={<RegisterUser></RegisterUser>} />
         <Route path="/login" element={<LoginPage></LoginPage>} />  
         <Route path="/locations" element={<Locations></Locations>} />  
-        <Route path="/top5" element={<LoginPage/>} />  
-        <Route path="/guess" element={<GuessGame/>} />  
+        <Route path="/user" element={<User/>} />  
+        <Route path="/guess" element={<GuessGame/>} /> 
         <Route path="/allanimals" element={<AllAnimals/>} />  
     </Routes>
     </ApolloProvider>

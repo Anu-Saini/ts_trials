@@ -3,14 +3,13 @@ import MyCarousel from "../components/Carousel";
 import { QUERY_PROFILES } from "../queries/AnimalQuery";
 
 import { useQuery } from "@apollo/client";
-import { CAROUSAL_LIMIT } from "../utils/Constants";
 
-const HomePage = () => {
+function HomePage() {
+
   const { loading, data } = useQuery(QUERY_PROFILES);
-  const profiles = data || [];
-  if (!loading) {
-    
-    
+  
+  if (!loading && data) {
+    const profiles = data || [];
     let len = profiles.animals.length;
     var randomAnimals = [];
     let previousIndex = -1;
@@ -31,6 +30,7 @@ const HomePage = () => {
             {loading ? (
               <div>Loading...</div>
             ) : (
+
               <MyCarousel data={randomAnimals}></MyCarousel>
             )}
           </div>

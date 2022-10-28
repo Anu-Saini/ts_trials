@@ -6,8 +6,6 @@ const animalSchema = new Schema({
     type: String,
     required: true,
     unique:true,
-    // minlength: 1,
-    // maxlength: 280,
     trim: true,
   },
   otherName: {
@@ -72,15 +70,6 @@ submitOn: {
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   }
-// editedBy: {
-//   type: Schema.Types.ObjectId,
-//   ref: 'user'
-//    },
-//   editedOn: {
-//       type: Date,
-//       default: Date.now,
-//       get: (timestamp) => dateFormat(timestamp),
-//     },
   });
 
 const Animal = model('Animal', animalSchema);

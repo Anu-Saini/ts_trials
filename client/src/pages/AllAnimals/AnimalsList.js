@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import React from "react";
 import { Avatar, List, Space } from 'antd';
 function AnimalList(props) {
-    debugger
+    
     const data = props.props.map((_, i) => ({
         href: 'https://ant.design',
         title: _.animalName,

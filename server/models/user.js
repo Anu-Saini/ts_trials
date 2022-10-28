@@ -5,10 +5,7 @@ const bcrypt = require('bcrypt');
 const userSchema = new Schema({ 
  userName: {
     type: String,
-    // required: 'You need to leave a thought!',
     required: true,
-    // minlength: 1,
-    // maxlength: 280,
     trim: true,
   },
   email: {
@@ -24,12 +21,6 @@ const userSchema = new Schema({
    trim: true,
    minLength:8, 
  },
-//  Animals: [
-//   {
-//     type:Schema.Types.ObjectId,
-//     ref: 'Animals'
-//   },
-//  ],
  });
 
   // setting up pre-save middleware to create password
