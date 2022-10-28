@@ -1,0 +1,24 @@
+[
+ {
+   "userName": "Anuraag Saini",
+   "email": "anuraag@test.com",
+   "password": "password01"
+ },
+ {
+  "userName": "Rahat saini",
+  "email": "rahat@test.com",
+  "password": "password02"
+},
+{
+ "userName": "Jigisha Saini",
+ "email": "jigisha@test.com",
+ "password": "password03"
+},
+{
+ "userName": "siya Saini",
+ "email": "siya@test.com",
+ "password": "password04"
+}
+]
+
+
