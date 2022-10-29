@@ -26,9 +26,7 @@ const resolvers = {
     animal: async (parent, { animalId }) => {
       return Animal.findOne({ _id: animalId });
     },
-    // animal: async (parent, { animalname }) => {
-    //   return Animal.findOne({ animalName: animalname });
-    // },
+
 
     users: async () => {
       return User.find();
@@ -107,9 +105,10 @@ const resolvers = {
         submitBy,
         
       });
-      const token = signToken(animal);
-
-      return { token, animal };
+      
+       const token = signToken(animal);
+      console.log(animal)
+      return { id: animal._id, animalName: animal.animalName};
     },
     
     // adding a thrid argument to the resolver to access data in our  'context'
