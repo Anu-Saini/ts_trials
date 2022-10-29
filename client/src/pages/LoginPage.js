@@ -5,7 +5,7 @@ import "./Pages.css";
 import { useMutation, useQuery } from "@apollo/client";
 import { LOGIN_QUERY } from "../queries/AnimalQuery";
 import { useNavigate } from "react-router-dom";
-
+import { Card } from 'antd';
 
 
 function LoginPage() {
@@ -40,13 +40,15 @@ function LoginPage() {
     console.log("Failed:", errorInfo);
   };
   return (
-    <>
-      <Row>
-        <Col span={12}>
-          <div className="login-left-panel"></div>
-        </Col>
-        <Col span={12}>
-          <Form
+    <div className="site-card-border-less-wrapper">
+    <Card
+      title="Card title"
+      bordered={false}
+      style={{
+        width: 300,
+      }}
+    >
+       <Form
             name="basic"
             labelCol={{
               span: 8,
@@ -137,9 +139,9 @@ function LoginPage() {
               </Button>
             </Form.Item>
           </Form>
-        </Col>
-      </Row>
-    </>
-  );
-};
+    </Card>
+  </div>
+);
+            }
+
 export default LoginPage;
