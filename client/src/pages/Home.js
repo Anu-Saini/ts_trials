@@ -7,11 +7,12 @@ import { useQuery } from "@apollo/client";
 function HomePage() {
 
   const { loading, data } = useQuery(QUERY_PROFILES);
-  
+  console.log(data)
+  var randomAnimals = [];
   if (!loading && data) {
+    
     const profiles = data || [];
     let len = profiles.animals.length;
-    var randomAnimals = [];
     let previousIndex = -1;
     while (randomAnimals.length < 4) {
       const randomElement = Math.floor(Math.random() * len);

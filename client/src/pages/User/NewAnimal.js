@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
+import { useMutation, useQuery } from "@apollo/client";
 import {
   Form,
   Input,
@@ -12,8 +13,10 @@ import {
   TreeSelect,
   Switch,
   Checkbox,
+  message,
   Upload,
 } from "antd";
+import { NEW_ANIMAL } from "../../queries/AnimalQuery";
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
@@ -34,20 +37,51 @@ const NewAnimal = (props) => {
     const [formState, setFormState] = useState({
         animalName: '',
         othername: '',
-        class: '',
+        classification: '',
         family: '',
         age: 0,
         foods: '',
         description: '',
         threats: '',
-        locations: '',
-        
-
+        locations: [''],
+        image: [''],
+        submitBy : ''
+      
+      });
+      const [NewAnimal, { data, loading, error }] = useMutation(NEW_ANIMAL, {
+        variables: {
+          animalName: formState.animalName,
+          otherName: formState.animalName,
+          classification: formState.classification,
+          family: formState.family,
+          age: formState.age,
+          foods: formState.foods,
+          population: formState.population,
+          threats: formState.threats,
+          description: formState.description,
+          submitBy: formState.submitBy,
+          location: formState.locations.split(" "),
+          image: formState.locations.split(" "),
+        },
       });
   const [componentDisabled, setComponentDisabled] = useState(true);
-  const onFinish = () =>{
-
+  const onFinish = (values) =>{
+    console.log(values)
+    setFormState({
+      ...values,
+    });
+    NewAnimal();
   }
+  const prop = {
+    beforeUpload: (file) => {
+      const isPNG = file.type === 'image/png';
+      if (!isPNG) {
+        message.error(`${file.name} is not a png file`);
+      }
+      return isPNG || Upload.LIST_IGNORE;
+    },
+   
+  };
   return (
     <Form
     labelCol={{ span: 4 }}
@@ -74,7 +108,7 @@ const NewAnimal = (props) => {
       <Form.Item name="othername" label="Other Name">
         <Input />
       </Form.Item>
-      <Form.Item name='class' label="Class">
+      <Form.Item name='classification' label="Class">
         <Select>
           <Select.Option value="Mannals">Mannals</Select.Option>
           <Select.Option value="Reptiles">Reptiles</Select.Option>
@@ -171,8 +205,8 @@ const NewAnimal = (props) => {
         </Form.Item>
       
 
-      <Form.Item label="Upload" valuePropName="fileList">
-        <Upload action="/upload.do" listType="picture-card">
+      <Form.Item label="Upload" name='image'>
+        <Upload {...prop} action="/upload.do" listType="picture-card">
           <div>
             <PlusOutlined />
             <div style={{ marginTop: 8 }}>Upload</div>
