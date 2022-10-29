@@ -28,8 +28,8 @@ const GuessGame = () => {
  
 return(
  <main>
-        <div className="flex-row justify-center">
-          <div className="col-12 col-md-10 my-3">
+        <div className="flex-row justify-center cardstack">
+          <div className="col-12 col-md-10 my-3 cardrow">
             {loading ? (
               <div>Loading...</div>
             ) : randomAnimals.map(animals =>{

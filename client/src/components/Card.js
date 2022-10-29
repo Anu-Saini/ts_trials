@@ -9,7 +9,7 @@ return(
 <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
-      <img src={props.data.image[0]} alt={props.data.animalName} style={{width:'300px',height:'300px'}} />
+      <img src={props.data.image[0]} alt={props.data.animalName} style={{width:'500px',height:'500px'}} />
     </div>
     <div className="flip-card-back">
       <h1>{props.data.animalName}</h1>

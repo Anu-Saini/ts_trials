@@ -27,6 +27,11 @@ const items = [
     label: (<a href="/register">Sign up</a>),
     key: "register",
   },
+   // {
+  //   label: (<Link to="/login">Login</Link>),
+  //   key: "login",
+  // },
+  
 ];
 
 const Navbar = () => {
