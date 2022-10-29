@@ -73,10 +73,9 @@ const resolvers = {
       return { token, user };
     },
 
-    addAnimal: async (
+    addAnimal: async ( 
       parent,
       {
-        userId,
         animalName,
         othername,
         family,
@@ -85,11 +84,16 @@ const resolvers = {
         population,
         location,
         description,
+        image,
+        classification,
+        submitBy,
       },
-      context
+      {
+        context
+      }
+      
     ) => {
       const animal = await Animal.create({
-        userId,
         animalName,
         othername,
         family,
@@ -98,28 +102,18 @@ const resolvers = {
         population,
         location,
         description,
+        image,
+        classification,
         submitBy,
+        
       });
       const token = signToken(animal);
 
       return { token, animal };
     },
-    // login: async (parent, { email, password }) => {
-    //   const user = await User.findOne({ email });
-    //   if (!user) {
-    //     throw new AuthenticationError("No user find with this email found!");
-    //   }
-    //   const correctPw = await user.isCorrectpassword(password);
-
-    //   if (!correctPw) {
-    //     throw new AuthenticationError("Incorrect password!");
-    //   }
-    //   const token = signToken(user);
-    //   return { token, user };
-    // },
-
+    
     // adding a thrid argument to the resolver to access data in our  'context'
-    addAnimal: async (
+    updateAnimal: async (
       parent,
       {
         animalId,
