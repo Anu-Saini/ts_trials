@@ -58,14 +58,12 @@ const RegisterUser = (props) => {
 
   if (error) console.log(error);
   if (!loading && data) {
-    console.log(data);
     navigate("/login");
   }
 
   const [form] = Form.useForm();
   const [autoCompleteResult, setAutoCompleteResult] = useState([]);
   const onFinish = (values) => {
-    debugger;
     setFormState({
       ...values,
     });

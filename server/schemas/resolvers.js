@@ -23,12 +23,10 @@ const resolvers = {
     animals: async () => {
       return Animal.find();
     },
-    animal: async (parent, { animalId }) => {
-      return Animal.findOne({ _id: animalId });
+    animal: async (parent, { userId }) => {
+      return Animal.find({ submitBy: userId });
     },
-    // animal: async (parent, { animalname }) => {
-    //   return Animal.findOne({ animalName: animalname });
-    // },
+
 
     users: async () => {
       return User.find();
@@ -73,10 +71,9 @@ const resolvers = {
       return { token, user };
     },
 
-    addAnimal: async (
+    addAnimal: async ( 
       parent,
       {
-        userId,
         animalName,
         othername,
         family,
@@ -85,11 +82,16 @@ const resolvers = {
         population,
         location,
         description,
+        image,
+        classification,
+        submitBy,
       },
-      context
+      {
+        context
+      }
+      
     ) => {
       const animal = await Animal.create({
-        userId,
         animalName,
         othername,
         family,
@@ -98,28 +100,19 @@ const resolvers = {
         population,
         location,
         description,
+        image,
+        classification,
         submitBy,
+        
       });
-      const token = signToken(animal);
-
-      return { token, animal };
+      
+       const token = signToken(animal);
+      console.log(animal)
+      return { id: animal._id, animalName: animal.animalName};
     },
-    // login: async (parent, { email, password }) => {
-    //   const user = await User.findOne({ email });
-    //   if (!user) {
-    //     throw new AuthenticationError("No user find with this email found!");
-    //   }
-    //   const correctPw = await user.isCorrectpassword(password);
-
-    //   if (!correctPw) {
-    //     throw new AuthenticationError("Incorrect password!");
-    //   }
-    //   const token = signToken(user);
-    //   return { token, user };
-    // },
-
+    
     // adding a thrid argument to the resolver to access data in our  'context'
-    addAnimal: async (
+    updateAnimal: async (
       parent,
       {
         animalId,

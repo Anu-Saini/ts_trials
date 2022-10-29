@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import React from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -12,16 +13,20 @@ import Navbar from './components/Navbar';
 import HomePage from "./pages/Home";
 import AllAnimals from "./pages/AllAnimals/Animal";
 import User from "./pages/User/User";
+import { apolloClient } from "./ApolloClient";
+
 
 const client = new ApolloClient({
   uri: 'http://localhost:3001/graphql',
   cache: new InMemoryCache(),
 });
 
+
+
 function App() {
   return (
     <>
-     <ApolloProvider client={client}>
+     <ApolloProvider client={apolloClient}>
     <Navbar/> 
     <Routes>    
         <Route path="/" element={<HomePage/>} />
