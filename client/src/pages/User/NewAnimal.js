@@ -13,6 +13,7 @@ import {
 } from "antd";
 import { NEW_ANIMAL } from "../../queries/AnimalQuery";
 import { json } from "react-router-dom";
+import uploadFileToBlob from "./UploadToBlob";
 const { TextArea } = Input;
 const tailFormItemLayout = {
   wrapperCol: {
@@ -39,6 +40,7 @@ const openNotification = (message, title) => {
   });
 };
 const NewAnimal = (props) => {
+  const [submitDisabled, setSubmitDisabled] =  useState(false);
   const [locations, setlocations] = useState([""]);
 
   const [formState, setFormState] = useState({
@@ -52,7 +54,7 @@ const NewAnimal = (props) => {
     threats: "",
     population: 0,
     locations: locations,
-    image: [""],
+    images: [""],
     submitBy: user._id,
   });
 
@@ -77,7 +79,7 @@ const NewAnimal = (props) => {
           description: formState.description,
           submitBy: formState.submitBy,
           location: formState.locations,
-          image: formState.locations,
+          image: formState.images,
         },
       }).then((data) =>{
         openNotification(`${data.data.addAnimal.animalName} has been added`, 'Success');
@@ -107,6 +109,21 @@ const NewAnimal = (props) => {
       return isPNG || Upload.LIST_IGNORE;
     },
   };
+
+  const upload = (images) =>{
+    setSubmitDisabled(true);
+    const data = uploadFileToBlob(images, user._id);
+    data.then((urls) =>{
+      
+      console.log(urls)
+      setFormState({
+        ...formState,
+        images: urls,
+      })
+    } ).then(() =>{
+      setSubmitDisabled(false)
+    })
+  }
   return (
     <Form
       labelCol={{ span: 4 }}
@@ -312,7 +329,7 @@ const NewAnimal = (props) => {
       </Form.Item>
 
       <Form.Item label="Upload" name="image">
-        <Upload {...prop} action="/upload.do" listType="picture-card">
+        <Upload {...prop} action={upload} listType="picture-card">
           <div>
             <PlusOutlined />
             <div style={{ marginTop: 8 }}>Upload</div>
@@ -321,7 +338,7 @@ const NewAnimal = (props) => {
       </Form.Item>
 
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
+        <Button disabled={submitDisabled} type="primary" htmlType="submit">
           Register
         </Button>
       </Form.Item>
