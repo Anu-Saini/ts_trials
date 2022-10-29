@@ -23,8 +23,8 @@ const resolvers = {
     animals: async () => {
       return Animal.find();
     },
-    animal: async (parent, { animalId }) => {
-      return Animal.findOne({ _id: animalId });
+    animal: async (parent, { userId }) => {
+      return Animal.find({ submitBy: userId });
     },
 
 
