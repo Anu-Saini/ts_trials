@@ -52,6 +52,6 @@ body {
   align-items: center;
  }
  .cardrow {
-  display: flex;
+  display: contents;
   margin-top: 50px;
  }

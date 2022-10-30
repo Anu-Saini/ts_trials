@@ -13,7 +13,7 @@ return(
     </div>
     <div className="flip-card-back">
       <h1>{props.data.animalName}</h1>
-      <p>className: {props.data.class}</p>
+      <p>class: {props.data.classification}</p>
       <p>Family: {props.data.family}</p>
       <p>Locations: {locations}</p>
       

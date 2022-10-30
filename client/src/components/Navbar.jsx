@@ -35,10 +35,6 @@ function Navbar() {
       key: "home",
     },
     {
-      label: <a href="/locations">Locations</a>, 
-      key: "maps",
-    },
-    {
       label: <a href="/allanimals">All Animals</a>,
       key: "animals",
     },

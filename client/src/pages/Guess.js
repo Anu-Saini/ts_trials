@@ -16,7 +16,7 @@ const GuessGame = () => {
     let len = profiles.animals.length;
    
     let previousIndex = -1;
-    while (randomAnimals.length < 4) {
+    while (randomAnimals.length < 8) {
       const randomElement = Math.floor(Math.random() * len);
       if (previousIndex === randomElement) {
         continue;
