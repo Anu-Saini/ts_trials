@@ -72,7 +72,7 @@ const [formState, setFormState] = useState({
     
 if(props.props)
 {
-  debugger
+  
   try {
     // Execute mutation and pass in defined parameter data as variables
     const { temp } = await UpdateAnimal({
@@ -93,6 +93,7 @@ if(props.props)
       },
     }).then((data) =>{
       openNotification(`${data.data.addAnimal.animalName} has been added`, 'Success');
+      
     })
 
   } catch (err) {

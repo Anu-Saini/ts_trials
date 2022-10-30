@@ -62,6 +62,10 @@ function Navbar() {
       label: (<Link to="/user">User</Link>),
       key: "new Animal",
     } : null,  
+    {
+      label: (<Link to="/donate">Donate</Link>),
+      key: "Donate",
+    },
   ];
     const onClick = (e) => {
       setCurrent(e.key);

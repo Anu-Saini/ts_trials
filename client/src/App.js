@@ -14,6 +14,7 @@ import HomePage from "./pages/Home";
 import AllAnimals from "./pages/AllAnimals/Animal";
 import User from "./pages/User/User";
 import { apolloClient } from "./ApolloClient";
+import Donate from "./pages/Donation";
 
 
 const client = new ApolloClient({
@@ -36,6 +37,7 @@ function App() {
         <Route path="/user" element={<User/>} />  
         <Route path="/guess" element={<GuessGame/>} /> 
         <Route path="/allanimals" element={<AllAnimals/>} />  
+        <Route path="/donate" element={<Donate/>} />  
     </Routes>
     </ApolloProvider>
     </>
