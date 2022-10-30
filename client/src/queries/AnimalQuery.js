@@ -29,6 +29,7 @@ mutation Mutation($email: String!, $password: String!) {
     user{
       _id
       userName
+      email
     }
   }
 }
@@ -50,3 +51,45 @@ mutation Mutation($animalName: String!, $otherName: String!, $classification: St
     animalName
   }
 }`;
+
+export const ANIMAL_BY_USER = gql`
+query Animal($animalId: String!) {
+  animal(animalId: $animalId) {
+    _id
+    animalName
+    otherName
+    classification
+    family
+    age
+    foods
+    population
+    image
+    threats
+    location
+    locationmap
+    description
+    submitBy
+    submitOn
+  }
+}`
+
+export const DELETE_ANIMAL = gql`
+mutation DeleteAnimal($animalId: ID!) {
+  deleteAnimal(animalId: $animalId) {
+    _id
+    animalName
+    otherName
+    classification
+    family
+    age
+    foods
+    population
+    image
+    threats
+    location
+    locationmap
+    description
+    submitBy
+    submitOn
+  }
+}`

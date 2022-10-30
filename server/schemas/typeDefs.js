@@ -18,9 +18,9 @@ type Animal {
   age: String
   foods: String
   population : String
-  image: [String]!
+  image: [String]
   threats: String
-  location : [String]!
+  location : [String]
   locationmap: String
   description: String
   submitBy: String
@@ -44,7 +44,7 @@ type Auth {
     classes: [Class]
     class(classId: ID!): Class
     animals: [Animal]
-    animal(animalId: ID!): Animal
+    animal(animalId: String): [Animal]
     users: [User]
     user(userId: ID!): User
     me: User

@@ -63,7 +63,7 @@ function Navbar() {
     } : null,  
     auth ?
     {
-      label: "User" ,
+      label: (<Link to="/user">User</Link>),
       key: "new Animal",
     } : null,  
   ];

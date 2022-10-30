@@ -23,14 +23,15 @@ const resolvers = {
     animals: async () => {
       return Animal.find();
     },
-    animal: async (parent, { userId }) => {
-      return Animal.find({ submitBy: userId }).populate('users');
+
+    animal: async (parent, { animalId }) => {
+      return await Animal.find({ submitBy: animalId });
     },
 
- 
     users: async () => {
       return User.find().populate('animals');
     },
+    
     user: async (parent, { userId }) => {
       return User.findOne({ _id: userId }).populate('animals');
     },
@@ -47,7 +48,7 @@ const resolvers = {
     },
 
     login: async (parent, { email, password }) => {
-      console.log(email)
+      
       // Look up the user by the provided email address. Since the `email` field is unique, we know that only one person will exist with that email
       const user = await User.findOne({ email });
       // If there is no user with that email address, return an Authentication error stating so

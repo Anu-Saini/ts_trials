@@ -25,7 +25,7 @@ function LoginPage() {
     
    if(!loading && data)
    {
-    console.log(data.login)
+    console.log(data)
     localStorage.setItem('token', data.login.token);
     localStorage.setItem('user', JSON.stringify(data.login.user));
     navigate('/user');

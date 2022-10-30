@@ -1,5 +1,6 @@
 import { Tabs } from 'antd';
 import React from 'react';
+import AnimalsByUser from './AnimalsByUser';
 import NewAnimal from './NewAnimal';
 
 
@@ -7,14 +8,13 @@ import NewAnimal from './NewAnimal';
 const User = () => (
 
 
-  <Tabs defaultActiveKey="1">
+  <Tabs defaultActiveKey="1" centered>
     <Tabs.TabPane tab="Add New" key="1">
       <NewAnimal></NewAnimal>
     </Tabs.TabPane>
-    <Tabs.TabPane tab="User Added" key="2">
-      Content of Tab Pane 2
+    <Tabs.TabPane tab="Animals" key="2">
+      <AnimalsByUser/>
     </Tabs.TabPane>
-   
   </Tabs>
 );
 export default User;
