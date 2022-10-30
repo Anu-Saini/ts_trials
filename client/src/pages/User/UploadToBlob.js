@@ -5,8 +5,10 @@
 import { BlobServiceClient, ContainerClient} from '@azure/storage-blob';
 
 var containerName = "";
+//for Anu to change
 const sasToken = "sv=2021-06-08&ss=b&srt=sco&sp=rwdlacx&se=2022-12-31T19:23:48Z&st=2022-10-29T11:23:48Z&spr=https&sig=5lVSRaDgMXyaRaUK27xNKm5jf%2Feq2tPOYALJJNr3L7E%3D";
 const storageAccountName = "rahatblob9b2e"; 
+// change till here
 // </snippet_package>
 
 // <snippet_isStorageConfigured>

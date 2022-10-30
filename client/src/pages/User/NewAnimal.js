@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
 import { useMutation } from "@apollo/client";
+import { Link } from 'react-router-dom';
 import {
   Form,
   Input,
@@ -12,8 +13,9 @@ import {
   notification 
 } from "antd";
 import { NEW_ANIMAL } from "../../queries/AnimalQuery";
-import { json } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 import uploadFileToBlob from "./UploadToBlob";
+import Auth from '../../utils/auth';
 const { TextArea } = Input;
 const tailFormItemLayout = {
   wrapperCol: {
@@ -29,6 +31,7 @@ const tailFormItemLayout = {
 };
 
 const user = JSON.parse(localStorage.getItem("user"));
+
 const openNotification = (message, title) => {
   notification.open({
     message: title,
@@ -39,8 +42,10 @@ const openNotification = (message, title) => {
     },
   });
 };
+
 const NewAnimal = (props) => {
-  const [submitDisabled, setSubmitDisabled] =  useState(false);
+
+ const [submitDisabled, setSubmitDisabled] =  useState(false);
   const [locations, setlocations] = useState([""]);
 
   const [formState, setFormState] = useState({
@@ -55,7 +60,7 @@ const NewAnimal = (props) => {
     population: 0,
     locations: locations,
     images: [""],
-    submitBy: user._id,
+    submitBy: user ? user._id : "",
   });
 
   const [NewAnimal, { data, loading, error }] = useMutation(NEW_ANIMAL);
@@ -83,12 +88,8 @@ const NewAnimal = (props) => {
         },
       }).then((data) =>{
         openNotification(`${data.data.addAnimal.animalName} has been added`, 'Success');
-      }).catch((err) =>{
-           
       })
-
-    
-     
+  
     } catch (err) {
     
       console.error(err.message);
@@ -125,6 +126,8 @@ const NewAnimal = (props) => {
     })
   }
   return (
+    <>
+    {Auth.loggedIn() ? (
     <Form
       labelCol={{ span: 4 }}
       wrapperCol={{ span: 14 }}
@@ -343,7 +346,14 @@ const NewAnimal = (props) => {
         </Button>
       </Form.Item>
     </Form>
-  );
-};
+  ) : 
+  (
+    <p>
+      You need to be logged in to share your thoughts. Please{' '}
+      <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+    </p>
+  )}
+  </>
+)};
 
 export default () => <NewAnimal />;
