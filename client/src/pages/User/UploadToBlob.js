@@ -7,6 +7,8 @@ import { BlobServiceClient, ContainerClient} from '@azure/storage-blob';
 var containerName = "";
 //for Anu to change
 const sasToken = "sv=2021-06-08&ss=b&srt=sco&sp=rwdlacx&se=2022-12-31T19:23:48Z&st=2022-10-29T11:23:48Z&spr=https&sig=5lVSRaDgMXyaRaUK27xNKm5jf%2Feq2tPOYALJJNr3L7E%3D";
+// key 1 - DefaultEndpointsProtocol=https;AccountName=animalkingdomstorage;AccountKey=VPAobDEnr1vyznsUmbw2eWF1UpGmekGsZa3+8xZZZxLcChDzBLlXZyefvMmm2DHToJIKsuakvcAg+AStnoCmaQ==;EndpointSuffix=core.windows.net
+// key 2 - DefaultEndpointsProtocol=https;AccountName=animalkingdomstorage;AccountKey=d6iblWWP5pf50bE1wx/jjbQ+WNu4hS81BzE5znx3+8rOKFBmUZQL3cnrVwpEijrsvDGGChlzyL2D+AStjwDJxA==;EndpointSuffix=core.windows.net
 const storageAccountName = "rahatblob9b2e"; 
 // change till here
 // </snippet_package>

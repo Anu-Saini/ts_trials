@@ -61,10 +61,16 @@ const animalSchema = new Schema({
     maxlength: 7000,
     trim: true,
   },
-  submitBy: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-  },
+  // submitBy: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
+    submitBy: {
+      type: String,
+      required: true,
+      maxlength: 100,
+      trim: true,
+    },
   submitOn: {
     type: Date,
     default: Date.now,

@@ -9,7 +9,7 @@ const resolvers = {
       return Class.find({}).populate("animals");
     },
     class: async (parent, { classId }) => {
-      return Class.findOne({ _id: classId });
+      return Class.findOne({ _id: classId }).populate("animals");
     },
 
     //by addingcontext to our query, we can retrive the logged in user without specifically searching for them
@@ -24,15 +24,15 @@ const resolvers = {
       return Animal.find();
     },
     animal: async (parent, { userId }) => {
-      return Animal.find({ submitBy: userId });
+      return Animal.find({ submitBy: userId }).populate('users');
     },
 
-
+ 
     users: async () => {
-      return User.find();
+      return User.find().populate('animals');
     },
     user: async (parent, { userId }) => {
-      return User.findOne({ _id: userId });
+      return User.findOne({ _id: userId }).populate('animals');
     },
   },
 
@@ -153,6 +153,12 @@ const resolvers = {
       // If user attempts to execute this mutation and isn't logged in, throw an error
       throw new AuthenticationError("You need to be logged in!");
     },
+
+    deleteAnimal: async (parent, {animalId  }) => {
+      return Animal.findOneAndDelete({ _id: animalId});
+    },
+
+    
   },
 };
 

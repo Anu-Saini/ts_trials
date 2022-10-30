@@ -31,8 +31,8 @@ type User {
   _id: ID
  userName: String
  email: String
-  password: String
-  animals: [Animal]!
+ password: String
+ animals: [Animal]!
 }
 
 type Auth {
@@ -53,7 +53,8 @@ type Auth {
    type Mutation {
     addAnimal(animalName: String!, otherName: String!, classification: String!, family: String!, age: Int!, foods: String! , population: String! , image: [String!],  threats: String! , location: [String!] ,description: String!, submitBy: String! ): Animal
     updateAnimal(id:ID!, otherName: String!, class:String!, family: String!, age: Int!, foods: String! , population: String! , image: [String!],  threats: String! , location: [String!] ,  locationmap: String!, description: String!, submitBy: String!  ): Animal
-        
+    deleteAnimal(animalId: ID!): Animal
+    
     addUser(userName: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
 

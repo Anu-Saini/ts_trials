@@ -11,8 +11,9 @@
     "threats": "Habitat Loss, Predators like Loins, lepoards, hyenas and pythons",
     "location":["Africa"],
     "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/aardvark-location-map.jpg" ,
-    "description":"Aardvarks are small pig-like mammals that are found inhabiting a wide range of different habitats throughout Africa, south of the Sahara. They are mostly solitary and spend their days sleeping in underground burrows to protect them from the heat of the African sun, emerging in the cooler evening to search for food. Their name originates from the Afrikaans language in South Africa and means Earth Pig, due to their long snout and pig-like body. Aardvarks are unique among animals as they are the only surviving species in their animal family. Until recently it was widely believed that they were most closely related to other insectivores such as armadillos and pangolins but this is not the case with their closest living relatives actually thought to be elephants."
-   },
+    "description":"Aardvarks are small pig-like mammals that are found inhabiting a wide range of different habitats throughout Africa, south of the Sahara. They are mostly solitary and spend their days sleeping in underground burrows to protect them from the heat of the African sun, emerging in the cooler evening to search for food. Their name originates from the Afrikaans language in South Africa and means Earth Pig, due to their long snout and pig-like body. Aardvarks are unique among animals as they are the only surviving species in their animal family. Until recently it was widely believed that they were most closely related to other insectivores such as armadillos and pangolins but this is not the case with their closest living relatives actually thought to be elephants.",
+    "submitBy":"anuraag@test.com"
+    },
    {
      "animalName": "Achrioptera Manga ",
    "othername": "Manga",
@@ -25,7 +26,8 @@
    "threats": "Habitat Loss, Predators like birds",
    "location":["Madagascar, Africa"],
    "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/achrioptera_manga-location-map.jpg" ,
-   "description":"First described in year 1861, it is only found in Madagascar, Achrioptera manga is a species of phasmid, also known as stick insects. This species is only found in a specific forest in northern Madagascar, making them one of the rarest stick insects out there. The males of this species feature a bright blue color, preventing them from blending into the green foliage."
+   "description":"First described in year 1861, it is only found in Madagascar, Achrioptera manga is a species of phasmid, also known as stick insects. This species is only found in a specific forest in northern Madagascar, making them one of the rarest stick insects out there. The males of this species feature a bright blue color, preventing them from blending into the green foliage.",
+   "submitBy":"anuraag@test.com"
   },
   { "animalName": "Aesculapian snake ",
   "othername": " ",
@@ -38,8 +40,9 @@
   "threats": "Habitat Loss, Eagles",
   "location":["Europe"],
   "locationmap":" https://animalkingdomstorage.blob.core.windows.net/newcontainer/aesculapian_snakelocation-map.jpg",
-  "description":"The Aesculapian snake may seem large and intimidating, but in reality, this non-venomous species is fairly harmless. The old adage that it is more afraid of you than you are afraid of it happens to be very true in this particular case. This species should not be confused with the Aesculapian false coral snake, which belongs to an entirely separate genus and looks completely different."
- }, 
+  "description":"The Aesculapian snake may seem large and intimidating, but in reality, this non-venomous species is fairly harmless. The old adage that it is more afraid of you than you are afraid of it happens to be very true in this particular case. This species should not be confused with the Aesculapian false coral snake, which belongs to an entirely separate genus and looks completely different.",
+  "submitBy":"anuraag@test.com"
+}, 
  {  "animalName": "Adelie Penguin ",
  "othername": "penguin",
  "classification" : "Birds",
@@ -51,8 +54,9 @@
  "threats": "Habitat loss, Leopard Seal, Skua Gull, Killer Whale",
  "location":["Europe","Asia"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/adelie-penguin-location-map.jpg ",
- "description":"The Adelie Penguin is the smallest and most widely distributed species of Penguin in the Southern Ocean and is one of only two species of Penguin found on the Antarctic mainland (the other being the much larger Emperor Penguin). The Adelie Penguin was named in 1840 by French explorer Jules Dumont d’Urville who named the Penguin for his wife, Adelie. Adelie Penguins have adapted well to life in the Antarctic as these migratory Birds winter in the northern pack-ice before returning south to the Antarctic coast for the warmer summer months."
- },  
+ "description":"The Adelie Penguin is the smallest and most widely distributed species of Penguin in the Southern Ocean and is one of only two species of Penguin found on the Antarctic mainland (the other being the much larger Emperor Penguin). The Adelie Penguin was named in 1840 by French explorer Jules Dumont d’Urville who named the Penguin for his wife, Adelie. Adelie Penguins have adapted well to life in the Antarctic as these migratory Birds winter in the northern pack-ice before returning south to the Antarctic coast for the warmer summer months.",
+ "submitBy":"anuraag@test.com"
+},  
  { "animalName": "Afghan Hound ",
  "othername": " ",
  "classification" : "Mammals",
@@ -64,8 +68,9 @@
  "threats": "Wildlife",
  "location":["Afghanistan"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/afghan-hound-location-map.jpg ",
- "description":"Afghan Hounds date back to ancient times, and the pedigree database dates back thousands of years ago by people of Afghanistan, North India, and Pakistan. Though they are easily found in rescue shelters, breeders will also sell them to make a profit from their long yet silky hair.Originally bred as hunting dogs, these dogs are strong and independent, requiring plenty of exercise to keep healthy and mentally occupied. They tend to be on their feet constantly, showing off their hair. However, some owners keep them shaved or short-haired to help them cool off in warmer environments."
- }, 
+ "description":"Afghan Hounds date back to ancient times, and the pedigree database dates back thousands of years ago by people of Afghanistan, North India, and Pakistan. Though they are easily found in rescue shelters, breeders will also sell them to make a profit from their long yet silky hair.Originally bred as hunting dogs, these dogs are strong and independent, requiring plenty of exercise to keep healthy and mentally occupied. They tend to be on their feet constantly, showing off their hair. However, some owners keep them shaved or short-haired to help them cool off in warmer environments.",
+ "submitBy":"anuraag@test.com"
+}, 
  {  "animalName": "African Bush Elephant ",
  "othername": "Elephant",
  "classification" : "Mammals",
@@ -77,8 +82,9 @@
  "threats": "Poaching and habitat loss",
  "location":["Central Africa","Southern Africa"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/african-bush-elephant-location-map.jpg ",
- "description":"The African Bush Elephant is the largest of all living creatures on land today, with some individuals growing to weigh more than 6 tonnes. The Elephant is thought to have been named after the Greek word for ivory, meaning that Elephants were named for their uniquely long tusks. Although many of the ancestors of the African Bush Elephant became extinct during the last ice-age (including the Woolly Mammoth), there are three distinct species of Elephant remaining today which are the Asian Elephant (of which there are a number of sub-species), the African Bush Elephant and the African Forest Elephant. Although these two Elephant species are very similar, the African Bush Elephant is considered to be generally larger than the African Forest Elephant, which has rounder ears and straighter tusks."
- },
+ "description":"The African Bush Elephant is the largest of all living creatures on land today, with some individuals growing to weigh more than 6 tonnes. The Elephant is thought to have been named after the Greek word for ivory, meaning that Elephants were named for their uniquely long tusks. Although many of the ancestors of the African Bush Elephant became extinct during the last ice-age (including the Woolly Mammoth), there are three distinct species of Elephant remaining today which are the Asian Elephant (of which there are a number of sub-species), the African Bush Elephant and the African Forest Elephant. Although these two Elephant species are very similar, the African Bush Elephant is considered to be generally larger than the African Forest Elephant, which has rounder ears and straighter tusks.",
+ "submitBy":"anuraag@test.com"
+},
  {  "animalName": "Alaskan Pollock ",
  "othername": "Snow Cod",
  "classification" : "Fish",
@@ -90,7 +96,8 @@
  "threats": "Aquatic mammals, other fish, birds of prey, humans",
  "location":["Asia","Eurosia","North America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/alaskan-pollock-location-map.jpg ",
- "description":"The marine fish species lives in the North Pacific and the Arctic Ocean and is the national fish of Korea, where it has over 31 names. Caught from Alaska to northern Japan every year, this fish species is the world’s second most important total catch after Peruvian anchoveta (a type of anchovy) and U.S. landings are the largest of any single fish species there. It’s the most commonly eaten wild-caught whitefish in the world and the third most commonly eaten fish in the United States."
+ "description":"The marine fish species lives in the North Pacific and the Arctic Ocean and is the national fish of Korea, where it has over 31 names. Caught from Alaska to northern Japan every year, this fish species is the world’s second most important total catch after Peruvian anchoveta (a type of anchovy) and U.S. landings are the largest of any single fish species there. It’s the most commonly eaten wild-caught whitefish in the world and the third most commonly eaten fish in the United States.",
+ "submitBy":"anuraag@test.com"
  },
  {  "animalName": "Albatross ",
  "othername": "Gooney bird",
@@ -103,8 +110,9 @@
  "threats": "Humans, sharks, cats, and rats, sea pollution",
  "location":["Central Africa","Southern Africa"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/albatross-location-map.jpg ",
- "description":"The sight of this familiar seabird and its massive wingspan flying high above the waters has seized the human imagination and inspired myths and folklore around the world for many centuries. It’s a true survivor with all kinds of unique adaptations for dealing with the stressful toll of long periods at sea. But competition with humans for food has caused numbers to rapidly decline."
- },
+ "description":"The sight of this familiar seabird and its massive wingspan flying high above the waters has seized the human imagination and inspired myths and folklore around the world for many centuries. It’s a true survivor with all kinds of unique adaptations for dealing with the stressful toll of long periods at sea. But competition with humans for food has caused numbers to rapidly decline.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "Alpine Goat ",
  "othername": "French Alpine",
  "classification" : "Mammals",
@@ -116,8 +124,9 @@
  "threats": "Habitat reduction, Wolves, mountain lions, bobcats, and other carnivores",
  "location":["Europe","North America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/alpine-goat-location-map.jpg ",
- "description":"With sweet faces and strong bodies, alpine goats are a common sight on farms and ranches throughout the Western world. The origin of these goats is generally accepted to be the mountainous French countryside, although the species has been domesticated for centuries. Regardless of whether you own a true French Alpine or are purchasing from the American Alpine breed, you can count on your goat to be sweet, friendly, and long-lived – all of which are important qualities for a domestic farm animal."
- },
+ "description":"With sweet faces and strong bodies, alpine goats are a common sight on farms and ranches throughout the Western world. The origin of these goats is generally accepted to be the mountainous French countryside, although the species has been domesticated for centuries. Regardless of whether you own a true French Alpine or are purchasing from the American Alpine breed, you can count on your goat to be sweet, friendly, and long-lived – all of which are important qualities for a domestic farm animal.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "Amazon Parrot",
  "othername": "Red Tailed parrot",
  "classification" : "Birds",
@@ -129,8 +138,9 @@
  "threats": "Pet trade, habitat destruction, Monkeys, birds of prey, snakes",
  "location":["Central America","South America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/amazon-parrot-location-map.jpg",
- "description":"Amazon parrots, which are often called amazons, are large members of the Psittacidae family. They are mostly native to South America. There are 35 species and several subspecies, and many can be trained to be talking birds to some extent. Physical features include big, powerful bills to crack the nuts they find in their native habitat and multicolored plumage. Mental features are high intelligence, curiosity, and a bold personality. Read on to learn more about these incredible birds."
- },
+ "description":"Amazon parrots, which are often called amazons, are large members of the Psittacidae family. They are mostly native to South America. There are 35 species and several subspecies, and many can be trained to be talking birds to some extent. Physical features include big, powerful bills to crack the nuts they find in their native habitat and multicolored plumage. Mental features are high intelligence, curiosity, and a bold personality. Read on to learn more about these incredible birds.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "American Alligators",
  "othername": " ",
  "classification" : "Reptiles",
@@ -142,8 +152,9 @@
  "threats": "water pollution , Human, Birds, Raccoon",
  "location":["Asia","North America", "Oceans"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/american_alligator-location-map.jpg ",
- "description":"Alligators are in the same family as other large reptiles like Crocodiles but are native to only two countries, which are the southern USA and China (where the Alligator is now nearly extinct). Alligators tend to be smaller than their Crocodile cousins but have been known to move at speeds of up to 15mph on land making them one of the fastest large reptiles in the world. Despite their size, there are a number of distinct differences between Alligators and Crocodiles as an Alligator’s snout is shorter than that of a Crocodile, and with their mouths shut, an Alligator’s teeth cannot be seen but a Crocodile’s can. Alligators are also commonly known as Gators in their native, southern North American habitats."
- },
+ "description":"Alligators are in the same family as other large reptiles like Crocodiles but are native to only two countries, which are the southern USA and China (where the Alligator is now nearly extinct). Alligators tend to be smaller than their Crocodile cousins but have been known to move at speeds of up to 15mph on land making them one of the fastest large reptiles in the world. Despite their size, there are a number of distinct differences between Alligators and Crocodiles as an Alligator’s snout is shorter than that of a Crocodile, and with their mouths shut, an Alligator’s teeth cannot be seen but a Crocodile’s can. Alligators are also commonly known as Gators in their native, southern North American habitats.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "Baboon",
  "othername": "Guinea Baboon",
  "classification" : "Mammals",
@@ -155,8 +166,9 @@
  "threats": "Hunting and habitat loss Lion, Leopard, African Wild Dog",
  "location":["Africa","Asia"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/baboon-location-map.jpg ",
- "description":"The Baboon is a medium to large sized species of Old World Monkey that is found in a variety of different habitats throughout Africa and in parts of Arabia. There are five different species of Baboon which are the Olive Baboon, the Guinea Baboon, the Chacma Baboon, the Yellow Baboon and the Hamadryas Baboon which differs most from the others wide its bright red face and cliff-dwelling lifestyle (the other four species are collectively known as Savanna Baboons). However, there is some debate over the classificationification of the different species due to the fact that some have been known to interbreed, indicating that they could be sub-species instead. Baboons are incredibly sociable and intelligent animals that are known to form close bonds with other members of the troop that often last for life. They are also incredibly adaptable animals but their population numbers are declining throughout their natural range primarily due to hunting and habitat loss."
- },
+ "description":"The Baboon is a medium to large sized species of Old World Monkey that is found in a variety of different habitats throughout Africa and in parts of Arabia. There are five different species of Baboon which are the Olive Baboon, the Guinea Baboon, the Chacma Baboon, the Yellow Baboon and the Hamadryas Baboon which differs most from the others wide its bright red face and cliff-dwelling lifestyle (the other four species are collectively known as Savanna Baboons). However, there is some debate over the classificationification of the different species due to the fact that some have been known to interbreed, indicating that they could be sub-species instead. Baboons are incredibly sociable and intelligent animals that are known to form close bonds with other members of the troop that often last for life. They are also incredibly adaptable animals but their population numbers are declining throughout their natural range primarily due to hunting and habitat loss.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "Baleen Whale",
  "othername": " ",
  "classification" : "Mammals",
@@ -168,7 +180,8 @@
  "threats": "Poaching/whaling , Humans, orcas",
  "location":["Oceans"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/baleen-whale-location-map.jpg ",
- "description":"Baleen whales have survived a lot of threats from humans through the years, which is why conservation efforts have been so important. They can be quite large, weighing anywhere from a few thousand pounds to well over 300,000 pounds. Spread amongst more than a dozen species, it is hard to find an area of the ocean that they won’t inhabit at some point.With the right dedication from humans, the population of these whales could rise back to what they were before whaling."
+ "description":"Baleen whales have survived a lot of threats from humans through the years, which is why conservation efforts have been so important. They can be quite large, weighing anywhere from a few thousand pounds to well over 300,000 pounds. Spread amongst more than a dozen species, it is hard to find an area of the ocean that they won’t inhabit at some point.With the right dedication from humans, the population of these whales could rise back to what they were before whaling.",
+ "submitBy":"siya@test.com"
  },
  {  "animalName": "Ball Python",
  "othername": " ",
@@ -181,8 +194,9 @@
  "threats": "humans, poaching",
  "location":["Asia","Eurasia","North America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/ball-python-location-map.jpg ",
- "description":"The ball python is one of the 10 species that are in the genus Python. The genus is made up of constricting species in the Pythonidae family that live in the tropical and subtropical areas of the Eastern Hemisphere.The ball python female lays up to 11 eggs and coils around them to keep them warm. The eggs are incubated for around 2 months. Once they hatch, the baby ball pythons are immediately independent. Despite their small size, which is less than 17 inches, they are capable of hunting on their own.As the snake matures, its color pattern becomes less vivid. It will remain close to where it was hatched for a few months and gradually range into a larger area as it matures."
- },
+ "description":"The ball python is one of the 10 species that are in the genus Python. The genus is made up of constricting species in the Pythonidae family that live in the tropical and subtropical areas of the Eastern Hemisphere.The ball python female lays up to 11 eggs and coils around them to keep them warm. The eggs are incubated for around 2 months. Once they hatch, the baby ball pythons are immediately independent. Despite their small size, which is less than 17 inches, they are capable of hunting on their own.As the snake matures, its color pattern becomes less vivid. It will remain close to where it was hatched for a few months and gradually range into a larger area as it matures.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Basking Shark",
  "othername": " ",
  "classification" : "Fish",
@@ -194,8 +208,9 @@
  "threats": "Sharks, Humans, Killer Whales",
  "location":["Oceans"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/basking-shark-location-map.jpg",
- "description":"Basking sharks, also known as bone sharks, may have an intimidating appearance and massive size that could easily frighten nearby swimmers or divers, but they are essentially harmless as far as humans and aquatic animals are concerned. Much like whales, these sharks feed on plankton and other tiny life forms by filtering vast amounts of ocean water through their mouths. They routinely cruise or even float along the surface with their mouths hanging open as they gather food. They are the second-largest known shark species and one of only three sharks that rely on plankton as a food source."
- },
+ "description":"Basking sharks, also known as bone sharks, may have an intimidating appearance and massive size that could easily frighten nearby swimmers or divers, but they are essentially harmless as far as humans and aquatic animals are concerned. Much like whales, these sharks feed on plankton and other tiny life forms by filtering vast amounts of ocean water through their mouths. They routinely cruise or even float along the surface with their mouths hanging open as they gather food. They are the second-largest known shark species and one of only three sharks that rely on plankton as a food source.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "owl",
  "othername": " Barn Owl",
  "classification" : "Birds",
@@ -207,8 +222,9 @@
  "threats": "Aquatic mammals, other fish, birds of prey, humans",
  "location":["All over world"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/barn-owl-location-map.jpg ",
- "description":"They are extremely widespread, one of the most widespread bird species on earth. Barn owls keep the rodent population in check wherever they live by preying on rats and mice primarily. In many cultures, they are seen as harbingers of death or symbolize the afterlife."
- },
+ "description":"They are extremely widespread, one of the most widespread bird species on earth. Barn owls keep the rodent population in check wherever they live by preying on rats and mice primarily. In many cultures, they are seen as harbingers of death or symbolize the afterlife.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Tiger",
  "othername": " Bengal Tiger",
  "classification" : "Mammals",
@@ -220,8 +236,9 @@
  "threats": "Poaching, Humans and decreasing habitat, ",
  "location":["Indian subcontinent"],
  "locationmap":" https://animalkingdomstorage.blob.core.windows.net/newcontainer/bengal-tiger-location-map.jpg",
- "description":"One of the most wondrous and iconic animals to walk the Earth, Bengal tigers are majestic and rare. They’re also one of the biggest cat species in the world. On average, Bengals are larger than other tiger species, but the largest tiger ever recorded was a Siberian. As such, Bengals are considered the second largest tiger species. Today, wild Bengal tigers are animals that only live in Bangladesh, Bhutan, India, and Nepal. And while there are more Bengals than any other tiger subspecies on the Indian subcontinent, the populations are endangered. Conservation efforts are working to some degree, but they’re not outpacing the poaching, deforestation, and human encroachment that has devastated wild tiger habitats over the past 50 years."
- },
+ "description":"One of the most wondrous and iconic animals to walk the Earth, Bengal tigers are majestic and rare. They’re also one of the biggest cat species in the world. On average, Bengals are larger than other tiger species, but the largest tiger ever recorded was a Siberian. As such, Bengals are considered the second largest tiger species. Today, wild Bengal tigers are animals that only live in Bangladesh, Bhutan, India, and Nepal. And while there are more Bengals than any other tiger subspecies on the Indian subcontinent, the populations are endangered. Conservation efforts are working to some degree, but they’re not outpacing the poaching, deforestation, and human encroachment that has devastated wild tiger habitats over the past 50 years.",
+  "submitBy":"siya@test.com"
+},
  {  "animalName": " Blue Whale",
  "othername": "pygmy ",
  "classification" : "Mammals",
@@ -233,8 +250,9 @@
  "threats": "Humans, Killer Whale pods",
  "location":["Asia","Eurasia"," North America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/blue-whale-location-map.jpg ",
- "description":"The Blue Whale is an enormous species of whale that is found in subtropical and polar waters worldwide. With some individuals growing to more than 100ft long, the Blue Whale is not only the largest animal species in the world but it is also thought that it could be the biggest creature that has ever existed. Learn about the largest ocean animals to have ever lived here. There are three recognised sub-species of the Blue Whale which are the Northern Blue Whale, the Southern Blue Whale and the Pygmy Blue Whale that despite its name, still reaches an average length of 24 meters. Although their enormous size and slow-maturing nature has meant that the world’s Blue Whale population has never been greatly numerous, they have drastically declined in numbers due to having been hunted by Humans particularly over the past 100 years. Blue Whales are now legally protected and despite one not having been deliberately caught since the 1970s, their numbers are continuing to fall in much of their natural range."
- },
+ "description":"The Blue Whale is an enormous species of whale that is found in subtropical and polar waters worldwide. With some individuals growing to more than 100ft long, the Blue Whale is not only the largest animal species in the world but it is also thought that it could be the biggest creature that has ever existed. Learn about the largest ocean animals to have ever lived here. There are three recognised sub-species of the Blue Whale which are the Northern Blue Whale, the Southern Blue Whale and the Pygmy Blue Whale that despite its name, still reaches an average length of 24 meters. Although their enormous size and slow-maturing nature has meant that the world’s Blue Whale population has never been greatly numerous, they have drastically declined in numbers due to having been hunted by Humans particularly over the past 100 years. Blue Whales are now legally protected and despite one not having been deliberately caught since the 1970s, their numbers are continuing to fall in much of their natural range.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Rhinocerous",
  "othername": " ",
  "classification" : "Mammals",
@@ -246,8 +264,9 @@
  "threats": "Poaching,Human, Wild cats",
  "location":["Asia", "Eurasia","North America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/black-rhinoceros-location-map.jpg ",
- "description":"The black rhino once roamed across a vast range in Africa, but heavy poaching has brought the species to the brink of extinction. Today, the black rhino is seeing its population rebound and is slowly being reintroduced to countries and environments the species vanished from in recent decades."
- },
+ "description":"The black rhino once roamed across a vast range in Africa, but heavy poaching has brought the species to the brink of extinction. Today, the black rhino is seeing its population rebound and is slowly being reintroduced to countries and environments the species vanished from in recent decades.",
+ "submitBy":"rahat@test.com"
+},
  {  "animalName": "Cheetah",
  "othername": " ",
  "classification" : "Mammals",
@@ -259,8 +278,9 @@
  "threats": "Poaching, Humans, deforestation",
  "location":["Africa" , "Asia", "Eurasia" ],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/cheetah-location-map.jpg ",
- "description":"The Cheetah is a large and powerful feline that was once found throughout Africa and Asia and even in parts of Europe. Today however, it is found in only a few remote regions of its once vast natural range, primarily due to growing Human settlements and the hunting of them for their fur. There are widely considered to be five different subspecies of Cheetah that vary only very slightly in coloration and are most easily distinguished by their geographic location. Although they are not considered to be part of the ‘big cat’ family as they cannot roar, Cheetahs are one of Africa‘s most powerful predators and are most renowned for their immense speed when in a chase. Capable of reaching speeds of more than 60mph for short periods of time, the Cheetah is the fastest land mammal in the world. Learn about the world’s fastest animals here."
- },
+ "description":"The Cheetah is a large and powerful feline that was once found throughout Africa and Asia and even in parts of Europe. Today however, it is found in only a few remote regions of its once vast natural range, primarily due to growing Human settlements and the hunting of them for their fur. There are widely considered to be five different subspecies of Cheetah that vary only very slightly in coloration and are most easily distinguished by their geographic location. Although they are not considered to be part of the ‘big cat’ family as they cannot roar, Cheetahs are one of Africa‘s most powerful predators and are most renowned for their immense speed when in a chase. Capable of reaching speeds of more than 60mph for short periods of time, the Cheetah is the fastest land mammal in the world. Learn about the world’s fastest animals here.",
+ "submitBy":"jigisha@test.com"
+},
  {  "animalName": "Zebra",
  "othername": "Mountain Zebra, common Zebra ",
  "classification" : "Mammals",
@@ -272,8 +292,9 @@
  "threats": "Habitat Loss &  predators",
  "location":["Africa"],
  "locationmap":" https://animalkingdomstorage.blob.core.windows.net/newcontainer/zebra-location-map.jpg",
- "description":"The Zebra is a large species of equine that is natively found roaming the grassy plains of sub-Saharan Africa. They are the largest and most distinctive wild horses with bodies that are patterned with white and black stripes, the exact placement of which is unique to each individual. There are three different species of Zebra that are found in Africa which are the Common Zebra (also known as the Plains Zebra and the Burchell’s Zebra), the Grevy’s Zebra (also known as the Imperial Zebra) and the Mountain Zebra. Zebras are incredibly sociable animals that can travel vast distances in search of fresh grass and water but are severely threatened throughout much of their natural range due to increasing levels of human activity. Today, both the Grevy’s Zebra and the Mountain Zebra are considered to be endangered species and although the Common Zebra is more widespread and numerous, there have been sharp population declines in certain areas."
- },
+ "description":"The Zebra is a large species of equine that is natively found roaming the grassy plains of sub-Saharan Africa. They are the largest and most distinctive wild horses with bodies that are patterned with white and black stripes, the exact placement of which is unique to each individual. There are three different species of Zebra that are found in Africa which are the Common Zebra (also known as the Plains Zebra and the Burchell’s Zebra), the Grevy’s Zebra (also known as the Imperial Zebra) and the Mountain Zebra. Zebras are incredibly sociable animals that can travel vast distances in search of fresh grass and water but are severely threatened throughout much of their natural range due to increasing levels of human activity. Today, both the Grevy’s Zebra and the Mountain Zebra are considered to be endangered species and although the Common Zebra is more widespread and numerous, there have been sharp population declines in certain areas.",
+ "submitBy":"jigisha@test.com"
+},
  {  "animalName": "Yak",
  "othername": " ",
  "classification" : "Mammals",
@@ -285,8 +306,9 @@
  "threats": "Habitat Loss &  predators",
  "location":["Asia","Eurasia"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/yak-location-map.jpg ",
- "description":"Yaks are animals that are native to Tibet and China but are also found in Mongolia, Nepal and Central Asia. Scientists believe that Qiang tribespeople domesticated yaks at least 5,000 years ago, a claim supported by genetic evidence. However, some Tibetan peoples may have possibly domesticated yaks as long as 10,000 years ago. Domestic yaks far outnumber wild ones and are bred for their tractability for plowing and threshing, high milk production, meat, hides and fur."
- },
+ "description":"Yaks are animals that are native to Tibet and China but are also found in Mongolia, Nepal and Central Asia. Scientists believe that Qiang tribespeople domesticated yaks at least 5,000 years ago, a claim supported by genetic evidence. However, some Tibetan peoples may have possibly domesticated yaks as long as 10,000 years ago. Domestic yaks far outnumber wild ones and are bred for their tractability for plowing and threshing, high milk production, meat, hides and fur.",
+ "submitBy":"jigisha@test.com"
+},
  {  "animalName": "Gorilla",
  "othername": " ",
  "classification" : "Mammals",
@@ -298,8 +320,9 @@
  "threats": "Habitat Loss & Human, Leopard, Crocodile",
  "location":["Africa"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/gorilla-location-map.jpg ",
- "description":"The name gorilla actually refers to four different subspecies of animals. They share 98 percent of their DNA with humans, and they are smart enough to learn sign language and use tools. Gorillas are far from the wild, violent beasts portrayed in entertainment, and they could even be considered rather shy. The wild population of gorillas is in rapid decline, and they are critically endangered. The average gorilla is as much as four times as strong as a human."
- },
+ "description":"The name gorilla actually refers to four different subspecies of animals. They share 98 percent of their DNA with humans, and they are smart enough to learn sign language and use tools. Gorillas are far from the wild, violent beasts portrayed in entertainment, and they could even be considered rather shy. The wild population of gorillas is in rapid decline, and they are critically endangered. The average gorilla is as much as four times as strong as a human.",
+ "submitBy":"jigisha@test.com"
+},
  {  "animalName": "Monkey",
  "othername": " ",
  "classification" : "Mammals",
@@ -311,8 +334,9 @@
  "threats": "Habitat Loss &  predators like Birds, Snakes, Wildcats",
  "location":["Africa"," Asia"," central America"," north America"," south America"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/monkey-location-map.jpg ",
- "description":"Monkeys are primates that comprise a wide range of species throughout much of the tropical world. Despite their raw variety, most of them face threats from human development, capture and hunting. Though all monkeys have many similar characteristics and a close relationship to humans, an early evolutionary shift created two major groups today: “old” and “new” world monkeys. Though they don’t walk on two legs, monkeys are closely related to humans–only great apes, such as chimpanzees, are more related. Monkeys are some of the most popular animals in the world."
- },
+ "description":"Monkeys are primates that comprise a wide range of species throughout much of the tropical world. Despite their raw variety, most of them face threats from human development, capture and hunting. Though all monkeys have many similar characteristics and a close relationship to humans, an early evolutionary shift created two major groups today: “old” and “new” world monkeys. Though they don’t walk on two legs, monkeys are closely related to humans–only great apes, such as chimpanzees, are more related. Monkeys are some of the most popular animals in the world.",
+ "submitBy":"jigisha@test.com"
+},
  {  "animalName": "Horse",
  "othername": " ",
  "classification" : "Mammals",
@@ -324,7 +348,8 @@
  "threats": "Human, Wolf, Bears",
  "location":["Africa"," Asia"," central America"," Europe"," Americas"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/horse-location-map.jpg",
- "description":"Over the course of 50 million years, horses evolved from small, many-toed animals to the majestic, single-toed equines we know today. Some wild horses remain, but most are domestic animals used by humans for a variety of reasons. Transportation and battle have been historically important uses of the domesticated horse into the modern era."
+ "description":"Over the course of 50 million years, horses evolved from small, many-toed animals to the majestic, single-toed equines we know today. Some wild horses remain, but most are domestic animals used by humans for a variety of reasons. Transportation and battle have been historically important uses of the domesticated horse into the modern era.",
+ "submitBy":"jigisha@test.com"
  },
  {  "animalName": "Koala",
  "othername": "koala bear ",
@@ -337,8 +362,9 @@
  "threats": "Human, Habitat loss and diseases",
  "location":["Australia"],
  "locationmap":" https://animalkingdomstorage.blob.core.windows.net/newcontainer/koala-location-map.jpg",
- "description":"The Koala is a small to medium sized mammal that is found inhabiting a variety of different types of forest in south-eastern Australia. Despite its appearance and the fact that it is also known as the Koala Bear, Koalas are in fact marsupials but are so distinctive amongst this specially adapted family of mammals that they are classificationified in a scientific group of their own. However, although they are now considered to be one of Australia’s most iconic mammal species when European settlers first arrived things were very different, with millions of Koalas known to have been killed every year for their pelts (fur). The Koala is a unique animal that famously feeds only the leaves of the eucalyptus trees which they inhabit but this diet is very hard to digest and lacks many of the vital nutrients that are key to the survival of a number of animal species. Today, although populations are stable and widespread the Koala is affected by habitat loss as vast areas of land are cleared every year to support growing development."
- },
+ "description":"The Koala is a small to medium sized mammal that is found inhabiting a variety of different types of forest in south-eastern Australia. Despite its appearance and the fact that it is also known as the Koala Bear, Koalas are in fact marsupials but are so distinctive amongst this specially adapted family of mammals that they are classificationified in a scientific group of their own. However, although they are now considered to be one of Australia’s most iconic mammal species when European settlers first arrived things were very different, with millions of Koalas known to have been killed every year for their pelts (fur). The Koala is a unique animal that famously feeds only the leaves of the eucalyptus trees which they inhabit but this diet is very hard to digest and lacks many of the vital nutrients that are key to the survival of a number of animal species. Today, although populations are stable and widespread the Koala is affected by habitat loss as vast areas of land are cleared every year to support growing development.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Giraffe",
  "othername": " ",
  "classification" : "Mammals",
@@ -350,8 +376,9 @@
  "threats": "Hunting and habitat loss",
  "location":["Africa"],
  "locationmap":" https://animalkingdomstorage.blob.core.windows.net/newcontainer/giraffe-location-map.jpg",
- "description":"The Giraffe is a long-necked, hoofed mammal that is natively found grazing in the open woodlands of sub-Saharan Africa. The Giraffe is the tallest living animal on land and despite its height is mostly closely related to the much smaller and solitary Okapi, that is found elusively dwelling in the dense tropical forests. There are nine recognised sub-species of Giraffe that are found in differing geographic locations and vary somewhat in the colour and pattern of their spot-like markings. Although the Giraffe would have once been found across sub-Saharan Africa and even in parts of North Africa, today they are extinct from much of their historically vast natural range with only small, isolated populations remaining in a handful of regions in central Africa. Further south however, Giraffe populations are considered to be stable and are even growing in some areas due to an increase in demand for them on private ranches."
- },
+ "description":"The Giraffe is a long-necked, hoofed mammal that is natively found grazing in the open woodlands of sub-Saharan Africa. The Giraffe is the tallest living animal on land and despite its height is mostly closely related to the much smaller and solitary Okapi, that is found elusively dwelling in the dense tropical forests. There are nine recognised sub-species of Giraffe that are found in differing geographic locations and vary somewhat in the colour and pattern of their spot-like markings. Although the Giraffe would have once been found across sub-Saharan Africa and even in parts of North Africa, today they are extinct from much of their historically vast natural range with only small, isolated populations remaining in a handful of regions in central Africa. Further south however, Giraffe populations are considered to be stable and are even growing in some areas due to an increase in demand for them on private ranches.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Kangaroo",
  "othername": " ",
  "classification" : "Mammals",
@@ -363,8 +390,9 @@
  "threats": "Human, Habitat loss and disease",
  "location":["Australia"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/kangaroo-location-map.jpg",
- "description":"When it’s in motion, the kangaroo hops completely clear off the ground, covering up to 30 feet in a single swift motion. No other large animal of this size has the same ability. As the national symbol of Australia, the kangaroo adorns a coat of arms, coins, and even the logos of sports teams and organizations. It has adapted very well to the presence of humans."
- },
+ "description":"When it’s in motion, the kangaroo hops completely clear off the ground, covering up to 30 feet in a single swift motion. No other large animal of this size has the same ability. As the national symbol of Australia, the kangaroo adorns a coat of arms, coins, and even the logos of sports teams and organizations. It has adapted very well to the presence of humans.",
+ "submitBy":"siya@test.com"
+},
  {  "animalName": "Camel",
  "othername": "Arabian Camel ",
  "classification" : "Mammals",
@@ -376,6 +404,7 @@
  "threats": "Lions, Leopards, Humans and drought",
  "location":["Africa","Asia","Eurasia","Oceania"],
  "locationmap":"https://animalkingdomstorage.blob.core.windows.net/newcontainer/camel-location-map.jpg ",
- "description":"The Camel (also known as the Dromedary Camel, the Arabian Camel and the One-Humped Camel) is a large hoofed animal that is most commonly found in the hot deserts of Northern Africa and the Middle East. Thought to have been first domesticated by native people more than 5,000 years ago, these hardy animals have proved vital to the survival of humans in these areas as they are not just used for transporting both people and goods, but also provide a good source of milk, meat and wool. The Camel is one of the most unique mammals on the planet and has adapted perfectly to life in the desert where food and water can often be scarce, and the temperature changes rapidly from the scorching-hot days to the cooler nights. However, although they would have once been found freely roaming the Arabian deserts, they are today extinct from the wild but the domestic population is widespread and numerous."
- }
+ "description":"The Camel (also known as the Dromedary Camel, the Arabian Camel and the One-Humped Camel) is a large hoofed animal that is most commonly found in the hot deserts of Northern Africa and the Middle East. Thought to have been first domesticated by native people more than 5,000 years ago, these hardy animals have proved vital to the survival of humans in these areas as they are not just used for transporting both people and goods, but also provide a good source of milk, meat and wool. The Camel is one of the most unique mammals on the planet and has adapted perfectly to life in the desert where food and water can often be scarce, and the temperature changes rapidly from the scorching-hot days to the cooler nights. However, although they would have once been found freely roaming the Arabian deserts, they are today extinct from the wild but the domestic population is widespread and numerous.",
+ "submitBy":"siya@test.com"
+}
  ]
