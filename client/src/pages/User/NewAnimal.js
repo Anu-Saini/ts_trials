@@ -12,7 +12,7 @@ import {
   Upload,
   notification 
 } from "antd";
-import { NEW_ANIMAL } from "../../queries/AnimalQuery";
+import { NEW_ANIMAL, UPDATE_ANIMAL } from "../../queries/AnimalQuery";
 import { json, useNavigate } from "react-router-dom";
 import uploadFileToBlob from "./UploadToBlob";
 import Auth from '../../utils/auth';
@@ -44,30 +44,63 @@ const openNotification = (message, title) => {
 };
 
 const NewAnimal = (props) => {
-
+  
+console.log( props.props)
  const [submitDisabled, setSubmitDisabled] =  useState(false);
   const [locations, setlocations] = useState([""]);
 
-  const [formState, setFormState] = useState({
-    animalName: "",
-    othername: "",
-    classification: "",
-    family: "",
-    age: 0,
-    foods: "",
-    description: "",
-    threats: "",
-    population: 0,
-    locations: locations,
-    images: [""],
-    submitBy: user ? user._id : "",
+
+const [formState, setFormState] = useState({
+    animalName: props.props ? props.props.animalName : "",
+    othername: props.props ? props.props.othername : "",
+    classification: props.classification ? props.props.classification : "",
+    family: props.props ? props.props.family : "",
+    age: props.props ? props.props.age : 0 ,
+    foods: props.props ? props.props.foods : "",
+    description: props.props ? props.props.description : "",
+    threats: props.props ? props.props.threats : "",
+    population: props.props ? props.props.population : 0,
+    location: props.props ? props.props.location : [""],
+    image: props.props ? props.props.image : [""],
+    submitBy:  props.props ? props.props.submitBy : user ? user._id : "",
   });
 
   const [NewAnimal, { data, loading, error }] = useMutation(NEW_ANIMAL);
+  const [UpdateAnimal, { data_, loading_, error_ }] = useMutation(UPDATE_ANIMAL);
   
   const handleFormSubmit = async (event) => {
     
+if(props.props)
+{
+  debugger
+  try {
+    // Execute mutation and pass in defined parameter data as variables
+    const { temp } = await UpdateAnimal({
+      variables: {
+        updateAnimalId: props.props._id,
+        animalName: formState.animalName,
+        otherName: formState.animalName,
+        classification: formState.classification,
+        family: formState.family,
+        age: parseInt(formState.age),
+        foods: formState.foods,
+        population: formState.population,
+        threats: formState.threats,
+        description: formState.description,
+        submitBy: formState.submitBy,
+        location: formState.location,
+        image: formState.image,
+      },
+    }).then((data) =>{
+      openNotification(`${data.data.addAnimal.animalName} has been added`, 'Success');
+    })
 
+  } catch (err) {
+  
+    console.error(err.message);
+  }
+}
+else{
     // Since mutation function is async, wrap in a `try...catch` to catch any network errors from throwing due to a failed request.
     try {
       // Execute mutation and pass in defined parameter data as variables
@@ -84,7 +117,7 @@ const NewAnimal = (props) => {
           description: formState.description,
           submitBy: formState.submitBy,
           location: formState.locations,
-          image: formState.images,
+          image: formState.image,
         },
       }).then((data) =>{
         openNotification(`${data.data.addAnimal.animalName} has been added`, 'Success');
@@ -94,6 +127,7 @@ const NewAnimal = (props) => {
     
       console.error(err.message);
     }
+  }
   };
 
 
@@ -135,6 +169,10 @@ const NewAnimal = (props) => {
       name="newAnimal"
       onFinish={handleFormSubmit}
       scrollToFirstError
+      initialValues={{
+        ...props.props,
+        location: props.props ? props.props.location.join(", ") : ""
+      }}
     >
       <Form.Item
         name="animalName"
@@ -301,7 +339,7 @@ const NewAnimal = (props) => {
         <Input />
       </Form.Item>
       <Form.Item
-        name="locations"
+        name="location"
         label="Typically found at"
         rules={[
           {
@@ -309,11 +347,11 @@ const NewAnimal = (props) => {
             message: "Please input location to the species",
           },
         ]}
-        value={formState.locations}
+        value={formState.location}
         onChange={(e) =>
           setFormState({
             ...formState,
-            locations: e.target.value,
+            location: e.target.value,
           })
         }
         hasFeedback
@@ -332,7 +370,7 @@ const NewAnimal = (props) => {
       </Form.Item>
 
       <Form.Item label="Upload" name="image">
-        <Upload {...prop} action={upload} listType="picture-card">
+        <Upload {...prop} action={upload} listType="picture-card"  fileList={formState.images}>
           <div>
             <PlusOutlined />
             <div style={{ marginTop: 8 }}>Upload</div>
@@ -342,7 +380,7 @@ const NewAnimal = (props) => {
 
       <Form.Item {...tailFormItemLayout}>
         <Button disabled={submitDisabled} type="primary" htmlType="submit">
-          Register
+          {props.props ?  ( <p>Save</p> ) : (<p>Register</p>)}
         </Button>
       </Form.Item>
     </Form>
@@ -356,4 +394,4 @@ const NewAnimal = (props) => {
   </>
 )};
 
-export default () => <NewAnimal />;
+export default NewAnimal;

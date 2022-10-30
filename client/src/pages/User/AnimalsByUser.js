@@ -1,5 +1,5 @@
 import { LikeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
-import { Avatar, List, Space, notification } from "antd";
+import { Avatar, List, Space, notification, Modal  } from "antd";
 import React, { useState } from "react";
 import { useMutation, useQuery } from "@apollo/client";
 import {
@@ -30,9 +30,29 @@ const openNotification = (message, title) => {
 };
 
 function AnimalsByUser() {
+    const [open, setOpen] = useState(false);
+    const [confirmLoading, setConfirmLoading] = useState(false);
+    const [modalText, setModalText] = useState('Content of the modal');
+    const showModal = () => {
+      setOpen(true);
+    };
+    const handleOk = () => {
+      setModalText('The modal will be closed after two seconds');
+      setConfirmLoading(true);
+      setTimeout(() => {
+        setOpen(false);
+        setConfirmLoading(false);
+      }, 2000);
+    };
+    const handleCancel = () => {
+      console.log('Clicked cancel button');
+      setOpen(false);
+    };
   const [userEmail, setUserEmail] = useState(
     JSON.parse(localStorage.getItem("user")).email
   );
+  const [modalTitle, setmodalTitle] = useState("Update"  );
+  
   const [size, setSize] = useState("small");
   const { loading, data } = useQuery(ANIMAL_BY_USER, {
     variables: {
@@ -61,10 +81,8 @@ function AnimalsByUser() {
       console.error(err.message);
     }
   }
-
-  function editAnimal(e) {
-    
-  }
+  const [animalToUpdate, setAnimalToUpdate] =  useState({});
+  
 
   const animalData = data || undefined;
   if (!loading && animalData) {
@@ -85,10 +103,10 @@ function AnimalsByUser() {
                     icon={<DeleteOutlined />}
                     size={size}
                     onClick={() => {
-                      editAnimal(item._id);
+                        deleteAnimal(item._id);
                     }}
                   >
-                    Edit
+                    Delete
                   </Button>
                   <Button
                     type="primary"
@@ -96,10 +114,13 @@ function AnimalsByUser() {
                     icon={<EditOutlined />}
                     size={size}
                     onClick={() => {
-                      deleteAnimal(item._id);
+                        setAnimalToUpdate(item);  
+                        setmodalTitle(item.animalName);
+                        setOpen(true);
+                      
                     }}
                   >
-                    Delete
+                    Edit
                   </Button>
                 </div>,
               ]}
@@ -123,7 +144,18 @@ function AnimalsByUser() {
             </List.Item>
           )}
         />
+         <Modal
+        title={modalTitle}
+        open={open}
+        onOk={handleOk}
+        confirmLoading={confirmLoading}
+        onCancel={handleCancel}
+      >
+        
+       <NewAnimal props={animalToUpdate}></NewAnimal>
+      </Modal>
       </div>
+      
     );
   } else {
     return <div> Loading.....</div>;

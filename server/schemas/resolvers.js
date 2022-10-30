@@ -108,7 +108,7 @@ const resolvers = {
       });
       
        const token = signToken(animal);
-      console.log(animal)
+      
       return { id: animal._id, animalName: animal.animalName};
     },
     
@@ -119,15 +119,20 @@ const resolvers = {
         animalId,
         animalName,
         othername,
+        classification,
         family,
         age,
         foods,
         population,
+        threats,
         location,
+        image,
         description,
+       submitBy
       },
       context
     ) => {
+      
       // if context gas a user property that means the user executing this mutation has a valid JWT and is logged in
       if (context.user) {
         return Animal.findOneAndUpdate(
@@ -136,12 +141,16 @@ const resolvers = {
             $addToSet: {
               animalName: animalName,
               othername: othername,
+              classification:classification, 
               family: family,
               age: age,
               foods: foods,
               population: population,
+              threats: threats,
+              image: image, 
               location: location,
               description: description,
+              submitBy: submitBy
             },
           },
           {
