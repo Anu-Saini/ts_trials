@@ -147,7 +147,6 @@ function AnimalsByUser() {
          <Modal
         title={modalTitle}
         open={open}
-        onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
       >

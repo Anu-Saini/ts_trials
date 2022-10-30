@@ -124,10 +124,38 @@ export const DELETE_ANIMAL = gql`
 `;
 
 export const UPDATE_ANIMAL = gql`
-mutation UpdateAnimal($updateAnimalId: ID!, $animalName: String!, $otherName: String!, $classification: String!, $family: String!, $age: Int!, $foods: String!, $population: String!, $threats: String!, $description: String!, $submitBy: String!, $image: [String!], $location: [String!]) {
-  updateAnimal(id: $updateAnimalId, animalName: $animalName, otherName: $otherName, classification: $classification, family: $family, age: $age, foods: $foods, population: $population, threats: $threats, description: $description, submitBy: $submitBy, image: $image, location: $location) {
-    _id
-    animalName
+  mutation UpdateAnimal(
+    $updateAnimalId: ID!
+    $animalName: String!
+    $otherName: String!
+    $classification: String!
+    $family: String!
+    $age: String!
+    $foods: String!
+    $population: String!
+    $threats: String!
+    $description: String!
+    $submitBy: String!
+    $image: [String!]
+    $location: [String!]
+  ) {
+    updateAnimal(
+      id: $updateAnimalId
+      animalName: $animalName
+      otherName: $otherName
+      classification: $classification
+      family: $family
+      age: $age
+      foods: $foods
+      population: $population
+      threats: $threats
+      description: $description
+      submitBy: $submitBy
+      image: $image
+      location: $location
+    ) {
+      _id
+      animalName
+    }
   }
-}
 `;

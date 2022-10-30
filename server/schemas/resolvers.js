@@ -116,7 +116,7 @@ const resolvers = {
     updateAnimal: async (
       parent,
       {
-        animalId,
+        id,
         animalName,
         othername,
         classification,
@@ -135,13 +135,14 @@ const resolvers = {
       
       // if context gas a user property that means the user executing this mutation has a valid JWT and is logged in
       if (context.user) {
+        
         return Animal.findOneAndUpdate(
-          { _id: animalId },
+          { _id: id },
           {
-            $addToSet: {
+            
               animalName: animalName,
               othername: othername,
-              classification:classification, 
+              classification: classification, 
               family: family,
               age: age,
               foods: foods,
@@ -151,12 +152,9 @@ const resolvers = {
               location: location,
               description: description,
               submitBy: submitBy
-            },
+          
           },
-          {
-            new: true,
-            runvalidators: true,
-          }
+          
         );
       }
 
